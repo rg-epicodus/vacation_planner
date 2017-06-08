@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Vacation Planner</title>
+  </head>
+  <body>
+<div class="container">
+  <h1>Uncle Lou's Vacation Planner</h1>
+  <div id="questionaire">
+    <form>
+      <h2>First we will need some personal information from you</h2>
+
+      <div class="row">
+        <div class="form-group col-xs-6 col-lg-6">
+          <label for="name"></label>
+          <input type="text" id="name" class="form-control" placeholder="Full Name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-xs-6 col-lg-6">
+          <label for="street"></label>
+          <input type="text" id="street" class="form-control" placeholder="Street">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-xs-3 col-lg-3">
+          <label for="city"></label>
+          <input type="text" id="city" class="form-control" placeholder="City">
+        </div>
+        <div class="form-group col-xs-1 col-lg-1">
+          <label for="state"></label>
+          <input type="text" id="state" class="form-control" placeholder="State">
+        </div>
+        <div class="form-group col-xs-2 col-lg-2">
+          <label for="zip"></label>
+          <input type="text" id="zip" class="form-control" placeholder="Zip Code">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-xs-2 col-lg-2">
+          <label for="phone"></label>
+          <input type="tel" id="phone" class="form-control" placeholder="555-555-5555" pattern="^\d{3}-\d{3}-\d{4}$">
+        </div>
+        <div class="form-group col-xs-4 col-lg-4">
+          <label for="email"></label>
+          <input type="email" id="email" class="form-control" placeholder="noah@epicodus.com">
+        </div>
+      </div>
+        <h2>Now we need to know some information about where you like to go:</h2>
+        <br>
+        <h3>Weather</h3>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Rainy</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Sunny</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Humid</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Snowing</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Arid</label>
+        </div>
+
+        <h3>Budget, per person</h3>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Under $2000</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">$2000 to $10000</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Over $10000</label>
+        </div>
+        <h3>Activity</h3>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Sightseeing</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Food and Wine</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Relaxation</label>
+        </div>
+        <h3>Adventure</h3>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Safe at the Resort</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Farmer's Market is fine</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">I want to jump off a cliff</label>
+        </div>
+        <h3>Nightlife</h3>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Early Bedtime</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Midnight Lights Out</label>
+        </div>
+        <div class="radio">
+           <label><input type="radio" name="optradio">Up All Night</label>
+        </div>
+        <br>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </div>
+  <div id="destination">
+    <h1>Thank you for filling out the survey, <span class="name">.</span> Our suggested destination for you is <span class="dest1">.</span></h1>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
