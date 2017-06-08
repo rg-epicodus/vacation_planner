@@ -1,3 +1,11 @@
-#destination {
+.jumbotron {
+  padding-left: 25px;
+}
+
+.hidden {
   display: none;
+}
+
+#weather, #epicurious, #population {
+  width: 300px;
 }
