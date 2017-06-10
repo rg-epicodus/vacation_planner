@@ -1,27 +1,29 @@
-# _{Richard Garrick Portfolio}_
+# Vacation Destination Survey: Code Review 2, 06/10/2017
 
-#### _{Vacation Destination Survey}, {06/8/2017}_
-
-#### By _**{Richard Garrick}**_
+#### By Richard Garrick
 
 ## Description
 
-_{This is a webpage for Richard Garrick's Vacation Planner page.  It is constantly in a state of flux.}_
+This is a webpage for Richard Garrick's Vacation Planner page.  Tried to have multiple forms slide in and out for the survey questions but could not get it, yet.
 
 ## Setup/Installation Requirements
 
-* _There are no real setup instructions, it is a webpage using CSS/HTML/Bootstrap/JavaScript/Atom/Jquery_
+There are no real setup instructions, it is a webpage using CSS/HTML/Bootstrap/JavaScript/Atom/Jquery
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+Could not find any to squish
 
 ## Support and contact details
 
-_{The web site for this project is located at: https://rg-epicodus.github.io/ }_
+The web site for this project is located at: https://rg-epicodus.github.io/vacation_planner/
+
+If you have any questions or comments, please let me know at:
+
+richmgarrick@gmail.com
 
 ### License
 
-*{This content is provided using the MIT license}*
+This content is provided using the MIT license
 
 Copyright (c) 2017 **_Richard Garrick_**
