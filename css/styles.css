@@ -2,17 +2,6 @@
   display: none;
 }
 
-#weather, #epicurious, #population {
-  width: 300px;
-}
-
-body {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("../img/background.jpg");
-}
-
 form {
   padding-left: 25px;
 }
@@ -20,39 +9,12 @@ form {
 body, html {
   height: 100%;
   font-family: sans-serif;
-  color: white;
-  margin-top: 50px;
+  color: #000;
+  margin-top: 25px;
   padding-left: 25px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
-/*Media Query Resizing Information*/
-@media (max-width: 575px) {
-  body {
-    background-image: url('../img/background.jpg');
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-  body {
-    background-image: url('../img/background.jpg');
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  body {
-    background-image: url('../img/background.jpg');
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  body {
-    background-image: url('../img/background.jpg');
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    background-image: url('../img/background.jpg');
-  }
+body {
+  background-color: #82B64A;
 }

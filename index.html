@@ -11,159 +11,243 @@
 </head>
 
 <body>
-  <div class="cover">
-    <div class="container-fluid">
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-       <div class="container-fluid">
-         <div class="navbar-header">
-           <a class="navbar-brand" href="#">Vacation Planner</a>
-         </div>
-       </div>
-      </nav>
-      <div>
-        <h1>Uncle Lou's Vacation Planner</h1>
-        <p>Welcome to Uncle Lou's Vacation-mah-jigger</p>
-        <p>Use our simple form heres to find the bestest place to go</p>
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Vacation Planner</a>
+        </div>
       </div>
-      <div class="row">
-        <!-- Area where forms populate -->
-        <form id="mainPage">
-          <h3>Click this here button to begins</h3>
-          <button type="submit" class="btn btn-default" id="mainPageSubmit">This one</button>
-        </form>
-        <!-- Personal Info entry portion -->
-        <form id="persInfo" class="hidden">
-          <h2>First we will need some personal information from you</h2>
+    </nav>
+    <h1>Let's first talk a bit about who you are:</h1>
+    <div id="survey">
+      <form>
+        <div class="container-fluid">
           <div class="row">
             <div class="form-group col-xs-5 col-lg-5">
               <label for="name"></label>
-              <input type="text" id="name" class="form-control" placeholder="Full Name">
+              <input id="name" class="form-control" type="text" placeholder="Name">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-xs-5 col-lg-5">
               <label for="street"></label>
-              <input type="text" id="street" class="form-control" placeholder="Street">
+              <input id="street" class="form-control" type="text" placeholder="Street Address">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-xs-2 col-lg-2">
               <label for="city"></label>
-              <input type="text" id="city" class="form-control" placeholder="City">
+              <input id="city" class="form-control" type="text" placeholder="City">
             </div>
             <div class="form-group col-xs-1 col-lg-1">
               <label for="state"></label>
-              <input type="text" id="state" class="form-control" placeholder="State">
+              <input id="state" class="form-control" type="text" placeholder="State">
             </div>
             <div class="form-group col-xs-2 col-lg-2">
               <label for="zip"></label>
-              <input type="text" id="zip" class="form-control" placeholder="Zip Code">
+              <input id="zip" class="form-control" type="text" placeholder="Zip Code">
             </div>
           </div>
           <div class="row">
             <div class="form-group col-xs-2 col-lg-2">
               <label for="phone"></label>
-              <input type="tel" id="phone" class="form-control" placeholder="555-555-5555" pattern="^\d{3}-\d{3}-\d{4}$">
+              <input id="phone" pattern="^\d{3}-\d{3}-\d{4}$" class="form-control" type="tel" placeholder="555-555-5555">
             </div>
             <div class="form-group col-xs-3 col-lg-3">
               <label for="email"></label>
-              <input type="email" id="email" class="form-control" placeholder="noah@epicodus.com">
+              <input id="email" class="form-control" type="email" placeholder="noah@epicodus.com">
             </div>
           </div>
-          <button type="submit" class="btn btn-default" id="persInfoSubmit">Next</button>
-        </form>
-        <form id="biome" class="hidden">
+
+
+          <!-- Biome Question -->
           <h2>What Biome type do you prefer?</h2>
-          <select class="form-control" id="weather">
-        <option value="1">Tropical</option>
-        <option value="2">Desert</option>
-        <option value="3">Temperate</option>
-        <option value="4">Coastal</option>
-        <option value="5">Mountains</option>
-      </select><br>
-          <button type="submit" class="btn btn-default" id="biomeSubmit">Next</button>
-        </form>
-        <form class="hidden" id="budget">
+          <div class="radio">
+            <label>
+              <input type="radio" name="biome" value="1">Temperate</input>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="biome" value="2">Mountain</input>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="biome" value="3">Coastal</input>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="biome" value="4">Desert</input>
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="biome" value="5">Tropical</input>
+            </label>
+          </div>
+
+          <!-- Budget Question -->
           <h2>What is your budget per person?</h2>
           <div class="radio">
             <label>
-          <input type="radio" name="budget" value="1">
-          Under $2000
-        </label>
+              <input type="radio" name="budget" value="1">
+              Under $500
+            </label>
           </div>
           <div class="radio">
             <label>
-          <input type="radio" name="budget" value="2">
-          $2000 to $5000
-        </label>
+              <input type="radio" name="budget" value="2">
+              $500 to $2500
+            </label>
           </div>
           <div class="radio">
             <label>
-          <input type="radio" name="budget" value="3">
-          Price is no consideration
-        </label>
+              <input type="radio" name="budget" value="3">
+              $2500 to $5000
+            </label>
           </div>
-          <br>
-          <button type="submit" class="btn btn-default" id="budgetSubmit">Next</button>
-        </form>
-        <form class="hidden" id="activity">
+          <div class="radio">
+            <label>
+              <input type="radio" name="budget" value="4">
+              $5000 to $20000
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="budget" value="5">
+              I have a trustfund and don't care
+            </label>
+          </div>
+
+
+          <!-- Activity Question -->
           <h2>What activity would you mainly like to do?</h2>
           <div class="radio">
             <label>
-          <input type="radio" name="activity" value="1">
-          Rest and Relaxtion
-        </label>
+             <input type="radio" name="activity" value="1">
+             Rest and Relaxtion
+           </label>
           </div>
           <div class="radio">
             <label>
-          <input type="radio" name="activity" value="2">
-          Shopping and Sightseeing
-        </label>
+             <input type="radio" name="activity" value="2">
+             Camping and Hiking
+           </label>
           </div>
           <div class="radio">
             <label>
-          <input type="radio" name="activity" value="3">
-          Camping and Hiking
-        </label>
+             <input type="radio" name="activity" value="3">
+             Shopping and Sightseeing
+           </label>
           </div>
           <div class="radio">
             <label>
-          <input type="radio" name="activity" value="4">
-          Hunt another person
-        </label>
+             <input type="radio" name="activity" value="4">
+             Gambling and Partying
+           </label>
+            <div class="radio">
+              <label>
+             <input type="radio" name="activity" value="5">
+             Hunt another Human (Deposit Required)
+           </label>
+            </div>
           </div>
-          <br>
-          <button type="submit" class="btn btn-default" id="activitySubmit">Next</button>
-        </form>
-        <form class="hidden" id="popDensity">
+
+          <!-- Population Density Question -->
           <h2>What to you want in population density at your vacation site?</h2>
-          <select class="form-control" id="population">
-        <option value="1">Desert Island alone</option>
-        <option value="2">Small Village</option>
-        <option value="3">Medium City with all amenities</option>
-        <option value="4">Large City with Massive Population</option>
-      </select><br>
-          <button type="submit" class="btn btn-default" id="popDensitySubmit">Next</button>
-        </form>
-        <form class="hidden" id="foodWine">
+          <div class="radio">
+            <label>
+             <input type="radio" name="population" value="1">Alone on a Deserted Island</input>
+           </label>
+          </div>
+          <div class="radio">
+            <label>
+             <input type="radio" name="population" value="2">Forest Village of Ewoks</input>
+           </label>
+          </div>
+          <div class="radio">
+            <label>
+             <input type="radio" name="population" value="3">Small Village with some Amenities</input>
+           </label>
+          </div>
+          <div class="radio">
+            <label>
+             <input type="radio" name="population" value="4">Medium City with average Population</input>
+           </label>
+          </div>
+          <div class="radio">
+            <label>
+             <input type="radio" name="population" value="5">Large Metropolitan City</input>
+           </label>
+          </div>
+
+          <!-- Food and Wine Section -->
           <h2>How important is the Food and/or Wine scene to you?</h2>
-          <select class="form-control" id="epicurious">
-        <option value="1">Bread and Water is fine</option>
-        <option value="2">Burgers at the Pub is fine</option>
-        <option value="3">Great Food and Wine, no franchises please</option>
-        <option value="4">3 michelins all the way</option>
-      </select><br>
-          <button type="submit" class="btn btn-default" id="foodWineSubmit">Finish</button>
-        </form>
+          <div class="radio">
+            <label>
+             <input type="radio" name="epicurious" value="1">Eat what you kill</input>
+           </label>
+          </div>
+          <div class="radio">
+            <label>
+             <input type="radio" name="epicurious" value="2">Bread and Water</input>
+           </label>
+          </div>
+          <div class="radio">
+            <label>
+             <input type="radio" name="epicurious" value="3">Red Lobster is amazing</input>
+           </label>
+          </div>
+          <div class="radio">
+            <label>
+             <input type="radio" name="epicurious" value="4">Gastro Pub or Farm to Table please</input>
+           </label>
+          </div>
+          <div class="radio">
+            <label>
+             <input type="radio" name="epicurious" value="5">Nothing Less than 3 Michelins</input>
+           </label>
+          </div>
+
+          <button type="submit" type="reset" class="btn">Where am I going?</button><br><br>
+          <input type="reset" value="Try Again" onClick="window.location.reload()">
+
+      </form>
       </div>
-      <!-- All of the above should return to here with personalized destination choices -->
-      <div id="destination" class="hidden">
-        <h2>Thank you for filling out the survey, <span class="name">.</span><br>
-    Our suggested destination for you is <span class="dest1">.</span></h2>
-        <h2>Here are a couple more suggestions to round out your choices:</h2>
+
+      <div>
+        <div id="v01" class="hidden">
+          <h1><span class="name"></span>, your vacation awaits!</h1>
+          <p>Mt Hood National Forest</p><br>
+          <img src="img/vacation01.jpg" alt="">
+        </div>
+        <div id="v02" class="hidden">
+          <h1><span class="name"></span>, your vacation awaits!</h1>
+          <p>Ewok Village on Endor</p>
+          <img src="img/vacation02.jpg" alt="">
+        </div>
+        <div id="v03" class="hidden">
+          <h1><span class="name"></span>, your vacation awaits!</h1>
+          <p>Cabo San Lucas</p>
+          <img src="img/vacation03.jpg" alt="">
+        </div>
+        <div id="v04" class="hidden">
+          <h1><span class="name"></span>, your vacation awaits!</h1>
+          <p>Las Vegas</p>
+          <img src="img/vacation04.jpg" alt="">
+        </div>
+        <div id="v05" class="hidden">
+          <h1><span class="name"></span>, your vacation awaits!</h1>
+          <p>Burj Al Arab Jumeirah</p>
+          <img src="img/vacation05.jpg" alt="">
+        </div>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
